@@ -1,0 +1,30 @@
+body {
+  padding-top: 8px;
+  padding-bottom: 20px;
+
+}
+
+.admin:link {
+  color: black;
+}
+.admin:hover {
+  background-color: black;
+  color: #eee
+}
+
+
+.login {
+  color: black;
+  position: relative;
+}
+
+.bleft {
+  text-align: right;
+}
+.menu {
+  text-align: center;
+}
+
+.js {
+  text-shadow: 1px 1px 1px #bbbbbb;
+}

@@ -79,23 +79,8 @@ body {
   margin-bottom: 3px;
 }
 
-.admin:hover {
-  background-color: white;
-  color: black
-}
 
-.loginleft {
-  float: left;
-}
-.login {
-  float: right;
-}
 
 .title {
   color: white;
-}
-
-.zhtu {
-  padding: 60px;
-  text-align: center;
 }
