@@ -25,13 +25,15 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <img class="logo img-responsive" src="../images/logo.png" />
+        <a href="../index.html">
+          <img class="logo img-responsive" src="../images/logo.png" />
+        </a>
       </div>
       <div class="col-md-4"></div>
       <div class="col-md-2"></div>
       <div class="col-md-2">
         <div class="login">
-        <h4><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;<a href=userinfo.html class="admin">admin</a></h4>
+        <h4><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;<a href=../index.html class="admin">admin</a></h4>
         </div>
       </div>
     </div>
@@ -41,6 +43,9 @@
           <div class="container-fluid">
             <div class="navbar-header">
               <div class="row menu">
+                <div class="col-md-2">
+                  <button type="button" class="btn btn-primary navbar-btn" onclick="location='page1.html'">欢迎首页</button>
+                </div>
               <div class="col-md-2">
                 <button type="button" class="btn btn-primary navbar-btn" onclick="location='data.html'">数据导入</button>
               </div>
@@ -94,5 +99,6 @@
   <script src="../js/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/myjs.js"></script>
 </body>
 </html>

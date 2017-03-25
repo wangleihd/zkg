@@ -25,13 +25,15 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <img class="logo img-responsive" src="../images/logo.png" />
+        <a href="../index.html">
+          <img class="logo img-responsive" src="../images/logo.png" />
+        </a>
       </div>
       <div class="col-md-4"></div>
       <div class="col-md-2"></div>
       <div class="col-md-2">
         <div class="login">
-        <h4><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;<a href=userinfo.html class="admin">admin</a></h4>
+        <h4><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;<a href=../index.html class="admin">admin</a></h4>
         </div>
       </div>
     </div>
@@ -41,20 +43,23 @@
           <div class="container-fluid">
             <div class="navbar-header">
               <div class="row menu">
+                <div class="col-md-2">
+                  <button type="button" class="btn btn-default navbar-btn" onclick="location='page1.html'">欢迎首页</button>
+                </div>
               <div class="col-md-2">
-                <button type="button" class="btn btn-primary navbar-btn" onclick="location='data.html'">数据导入</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="location='data.html'">数据导入</button>
               </div>
               <div class="col-md-2">
                 <button type="button" class="btn btn-primary navbar-btn" onclick="location='input.html'">数据录入</button>
               </div>
               <div class="col-md-2">
-                <button type="button" class="btn btn-primary navbar-btn" onclick="location='analysis.html'">数据分析</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="location='analysis.html'">数据分析</button>
               </div>
               <div class="col-md-2">
-                <button type="button" class="btn btn-primary navbar-btn" onclick="location='count.html'">统计分析</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="location='count.html'">统计分析</button>
               </div>
               <div class="col-md-2">
-                <button type="button" class="btn btn-primary navbar-btn" onclick="location='system.html'">系统管理</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="location='system.html'">系统管理</button>
               </div>
           </div>
         </nav>
@@ -65,7 +70,7 @@
 
     <div class="container">
       <div class="jumbotron">
-  <h1 class="js">欢迎使用骨密度分析系统</h1>
+  <h2 class="js">数据录入</h2>
   <br />
   <br />
   <p class="js">骨密度测定对于各种原因所致骨质疏松症，灵敏度高，诊断率高。骨密度测定有助于协助诊断骨质疏松症。</p>
@@ -94,5 +99,6 @@
   <script src="../js/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/myjs.js"></script>
 </body>
 </html>
