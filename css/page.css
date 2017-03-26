@@ -29,6 +29,14 @@ body {
   text-shadow: 1px 1px 1px #bbbbbb;
 }
 
+table {
+  background-color: white;
+}
+th,td,.cent {
+  text-align: center;
+}
+
+
 .waik {
   border: 1px solid #337ab7;
   border-radius: 3px;
