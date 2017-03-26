@@ -35,7 +35,24 @@ table {
 th,td,.cent {
   text-align: center;
 }
+.one {
+  color: #6699FF;
+}
+.tow {
+  color: #FFCC66;
+}
+.tree {
+  color: #CC66FF;
+}
+.one, .tow, .tree {
+  text-align: left;
+  text-shadow: 1px 1px 1px #bbbbbb;
+}
 
+.chart {
+  text-align: center;
+  background-color: white;
+}
 
 .waik {
   border: 1px solid #337ab7;

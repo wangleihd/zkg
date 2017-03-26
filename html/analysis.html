@@ -72,7 +72,34 @@
       <div class="jumbotron">
   <h2 class="js">数据分析</h2>
   <br />
-  <p class="cent">不同年龄段之间骨量减少状态, 骨质疏松统计表</p>
+  <p class="cent">不同性别之间骨质减少状态, 骨质疏松统计表:
+  </p>
+  <div class="container chart">
+    <br >
+    <div class="row">
+      <div class="col-md-6">
+        <canvas id="nan" height="350" width="500"></canvas>
+      </div>
+      <div class="col-md-6">
+        <canvas id="nv" height="350" width="500"></canvas>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="one">骨密度检测正常: 7701  69.42%</p>
+        <p class="tow">骨密度检测减少: 2355  21.23%</p>
+        <p class="tree">骨持疏松: 1038  9.36%</p>
+      </div>
+      <div class="col-md-6">
+        <p class="one">骨密度检测正常: 6033  55.23%</p>
+        <p class="tow">骨密度检测减少: 3106  27.43%</p>
+        <p class="tree">骨持疏松: 1785  16.34%</p>
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <p class="cent">不同年龄段之间骨量减少状态, 骨质疏松统计表: </p>
   <table class="table table-striped table-hover table-bordered">
     <tr>
       <th>年 龄</th>
@@ -141,14 +168,7 @@
 
   </table>
   <br />
-  <div class="chart">
-          <canvas id="myChart" height="450" width="600"></canvas>
-  </div>
 
-  <br />
-  <div class="bleft">
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">更多 ...</a></p>
-  </div>
 
 </div>
     </div>
@@ -166,26 +186,47 @@
   <script src="../js/myjs.js"></script>
   <script>
 
-		var pieData = [
+		var pienan = [
 				{
 					value: 7701,
-					color:"#F38630",
+					color:"#6699FF",
           label: "骨密度检测正常人"
 				},
 				{
 					value : 2355,
-					color : "#E0E4CC",
+					color : "#FFCC66",
           text: "骨密度检测正常人"
 				},
 				{
 					value : 1038,
-					color : "#69D2E7",
+					color : "#CC66FF",
           text: "骨密度检测正常人"
 				}
 
 			];
 
-	var myPie = new Chart(document.getElementById("myChart").getContext("2d")).Pie(pieData);
+	var nan = new Chart(document.getElementById("nan").getContext("2d")).Pie(pienan);
+
+  var pieData = [
+      {
+        value: 6033,
+        color:"#6699FF",
+        label: "骨密度检测正常人"
+      },
+      {
+        value : 3106,
+        color : "#FFCC66",
+        text: "骨密度检测正常人"
+      },
+      {
+        value : 1785,
+        color : "#CC66FF",
+        text: "骨密度检测正常人"
+      }
+
+    ];
+
+var myPie = new Chart(document.getElementById("nv").getContext("2d")).Pie(pieData);
 
 	</script>
 </body>
