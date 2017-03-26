@@ -72,6 +72,10 @@
       <div class="jumbotron">
   <h2 class="js">统计分析</h2>
   <br />
+  <div class="chart js">
+    <canvas id="mychart" height="500" width="1000"></canvas>
+  </div>
+
   <br />
   <p class="js">骨密度测定对于各种原因所致骨质疏松症，灵敏度高，诊断率高。骨密度测定有助于协助诊断骨质疏松症。</p>
   <br />
@@ -100,6 +104,47 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="../js/bootstrap.min.js"></script>
   <script src="http://cdn.bootcss.com/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="../js/chart.min.js"></script>
   <script src="../js/myjs.js"></script>
+  <script>
+
+		var lineChartData = {
+			labels : ["20 岁","30 岁","40 岁","50 岁","60 岁"," 70 岁","平均值"],
+			datasets : [
+        {
+					fillColor : "rgba(151,187,205,0.0)",
+					strokeColor : "#339966",
+					pointColor : "#339966",
+					pointStrokeColor : "#fff",
+					data : [-1,-1,-1,-1,-1,-1,-1]
+				},
+        {
+					fillColor : "rgba(255,102,153,0.3)",
+					strokeColor : "#339966",
+					pointColor : "#339966",
+					pointStrokeColor : "#fff",
+					data : [-2,-2,-2,-2,-2,-2,-2]
+				},
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "#666666",
+					pointStrokeColor : "#fff",
+					data : [2.54,1.21,-0.53,-1.24,-2.01,-2.89,-1.56]
+				},
+				{
+					fillColor : "rgba(151,187,205,0.5)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "#0033CC",
+					pointStrokeColor : "#fff",
+					data : [2.23,1.23,-0.87,-1.65,-2.34,-2.76,-1.98]
+				}
+			]
+
+		}
+
+	var myLine = new Chart(document.getElementById("mychart").getContext("2d")).Line(lineChartData);
+
+	</script>
 </body>
 </html>
