@@ -32,8 +32,10 @@ body {
 table {
   background-color: white;
 }
+
 th,td,.cent {
   text-align: center;
+  text-shadow: 1px 1px 1px #bbbbbb;
 }
 .one {
   color: #6699FF;
@@ -45,7 +47,6 @@ th,td,.cent {
   color: #CC66FF;
 }
 .one, .tow, .tree {
-  text-align: left;
   text-shadow: 1px 1px 1px #bbbbbb;
 }
 
